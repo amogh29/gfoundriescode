@@ -6,6 +6,8 @@ public class AuthenticationResponse {
 	private String instance_url;
 	private String token_type;
 	private String issued_at;
+	private String id;
+	private String signature;
 	 
 	public String getAccess_token() {
 	return access_token;
@@ -36,5 +38,17 @@ public class AuthenticationResponse {
 	public String toString() {
 	return "AuthenticationResponse [access_token=" + access_token + ", instance_url=" + instance_url
 	+ ", token_type=" + token_type + ", issued_at=" + issued_at + "]";
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getSignature() {
+		return signature;
+	}
+	public void setSignature(String signature) {
+		this.signature = signature;
 	}
 }
